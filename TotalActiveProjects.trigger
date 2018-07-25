@@ -5,9 +5,9 @@ trigger TotalActiveProjects on Project__c (before insert, before update, before 
 
 		if (Trigger.isInsert || Trigger.isUndelete) {
 	    	
-	    	For( Project__c projNew : Trigger.new ){
-	    		clientsIds.add(projNew.Client__c);
-	    	}
+			For( Project__c projNew : Trigger.new ){
+				clientsIds.add(projNew.Client__c);
+			}
 		} 
 
 		else if (Trigger.isAfter) {
