@@ -26,8 +26,8 @@ public  class TotalActiveProjectsHelper {
 
 
 			myResult.clientsWithoutActiveProjects = [Select Id, TotalActiveProjects_c__c
-													From Client__c
-													Where Id NOT In : clientsWithActiveProjectsIds];
+								From Client__c
+								Where Id NOT In : clientsWithActiveProjectsIds];
 
 			For( Client__c client : myResult.clientsWithoutActiveProjects ){
 				client.TotalActiveProjects_c__c = 0;
