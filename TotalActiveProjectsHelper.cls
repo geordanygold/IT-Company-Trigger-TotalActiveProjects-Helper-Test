@@ -21,7 +21,7 @@ public  class TotalActiveProjectsHelper {
 					TotalActiveProjects_c__c = (Integer)ag.get('total')
 				));
                 
-                clientsWithActiveProjectsIds.add( (id)ag.get('Client__c') );
+                		clientsWithActiveProjectsIds.add( (id)ag.get('Client__c') );
 			}								
 
 
